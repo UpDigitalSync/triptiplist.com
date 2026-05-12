@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<title>TripTipList — Your Next Trip, Planned — TripTipList</title>
+<meta name="description" content="Honest travel guides for Portugal, Italy, Japan and more. Real tips, detailed itineraries, and local insights to plan your perfect trip.">
+<link rel="canonical" href="https://triptiplist.com">
+<meta property="og:title" content="TripTipList — Your Next Trip, Planned">
+<meta property="og:description" content="Honest travel guides for Portugal, Italy, Japan and more. Real tips, detailed itineraries, and local insights to plan your perfect trip.">
+<meta property="og:url" content="https://triptiplist.com">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TripTipList">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "TripTipList", "url": "https://triptiplist.com", "description": "Honest travel guides written from real experience. Portugal, Italy, Japan and more.", "publisher": {"@type": "Organization", "name": "TripTipList", "url": "https://triptiplist.com"}}</script>
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EBSCH74MWN"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-EBSCH74MWN');
+</script>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color:#1a1a1a; line-height:1.7; background:#fafaf8; }
+a { color:#c0504d; text-decoration:none; }
+a:hover { text-decoration:underline; }
+header { background:#fff; border-bottom:2px solid #c0504d; padding:1rem 0; }
+.container { max-width:900px; margin:0 auto; padding:0 1.5rem; }
+.logo { font-size:1.6rem; font-weight:700; color:#c0504d; text-decoration:none; }
+.logo:hover { text-decoration:none; opacity:0.85; }
+.logo span { color:#333; }
+nav { margin-top:0.5rem; }
+nav a { margin-right:1.2rem; color:#555; font-size:0.95rem; font-weight:500; }
+nav a.active { color:#c0504d; border-bottom:2px solid #c0504d; padding-bottom:2px; }
+main { padding:2rem 0; }
+.breadcrumb { color:#888; font-size:0.85rem; margin-bottom:1.5rem; }
+.reading-time { display:inline-block; background:#f0f0f0; color:#666; font-size:0.8rem; padding:0.2rem 0.6rem; border-radius:12px; margin-left:0.5rem; vertical-align:middle; }
+.hero-img { width:100%; max-height:400px; object-fit:cover; border-radius:12px; margin:0.5rem 0 1.5rem; }
+.article-content h1 { font-size:2rem; color:#1a1a1a; margin-bottom:0.5rem; line-height:1.3; }
+.article-content h2 { font-size:1.4rem; color:#c0504d; margin:2rem 0 0.8rem; scroll-margin-top:80px; }
+.article-content h3 { font-size:1.15rem; margin:1.5rem 0 0.5rem; scroll-margin-top:80px; }
+.article-content p { margin-bottom:1rem; }
+.article-content ul, .article-content ol { margin:0.5rem 0 1rem 1.5rem; }
+.article-content li { margin-bottom:0.4rem; }
+.article-content blockquote { border-left:3px solid #c0504d; padding:0.5rem 1rem; margin:1rem 0; background:#fff5f5; color:#555; font-style:italic; }
+.article-content table { width:100%; border-collapse:collapse; margin:1rem 0; }
+.article-content th, .article-content td { border:1px solid #ddd; padding:0.6rem 0.8rem; text-align:left; font-size:0.9rem; }
+.article-content th { background:#f4cccc; font-weight:600; }
+.article-content strong { color:#333; }
+.article-content img { max-width:100%; height:auto; }
+.meta { color:#888; font-size:0.85rem; margin-bottom:2rem; }
+/* TOC */
+.toc { background:#fff; border:1px solid #e8e8e8; border-radius:8px; padding:1rem 1.5rem; margin:1rem 0 2rem; }
+.toc summary { cursor:pointer; font-size:1rem; }
+.toc ol { margin:0.5rem 0 0 1.2rem; padding:0; }
+.toc li { margin:0.3rem 0; font-size:0.9rem; }
+.toc li.toc-sub { margin-left:1rem; font-size:0.85rem; }
+.toc a { color:#555; }
+.toc a:hover { color:#c0504d; }
+/* Cards */
+.card-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:1.2rem; margin-top:1.5rem; }
+.card { background:#fff; border:1px solid #e8e8e8; border-radius:8px; overflow:hidden; transition:box-shadow 0.2s; }
+.card:hover { box-shadow:0 4px 12px rgba(0,0,0,0.08); }
+.card img { width:100%; height:160px; object-fit:cover; }
+.card-body { padding:1rem 1.2rem; }
+.card h3 { font-size:1.05rem; margin-bottom:0.4rem; }
+.card h3 a { color:#1a1a1a; }
+.card .tag { display:inline-block; background:#f4cccc; color:#c0504d; font-size:0.75rem; padding:0.15rem 0.5rem; border-radius:12px; font-weight:600; text-transform:capitalize; margin-bottom:0.4rem; }
+.hero { text-align:center; padding:3rem 0 2rem; }
+.hero h1 { font-size:2.4rem; color:#1a1a1a; margin-bottom:0.5rem; }
+.hero p { color:#666; font-size:1.1rem; max-width:600px; margin:0 auto; }
+/* Related articles */
+.related-articles { margin-top:3rem; padding-top:2rem; border-top:1px solid #eee; }
+.related-articles h2 { color:#1a1a1a !important; font-size:1.3rem !important; margin-bottom:1rem !important; }
+.related-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(240px, 1fr)); gap:1rem; }
+.related-card { background:#fff; border:1px solid #e8e8e8; border-radius:8px; overflow:hidden; transition:box-shadow 0.2s; }
+.related-card:hover { box-shadow:0 4px 12px rgba(0,0,0,0.08); }
+.related-card a { display:block; color:#1a1a1a; text-decoration:none; }
+.related-card img { width:100%; height:120px; object-fit:cover; }
+.related-card span { display:block; padding:0.8rem 1rem; font-size:0.95rem; font-weight:500; }
+footer { border-top:1px solid #eee; padding:1.5rem 0; text-align:center; color:#999; font-size:0.8rem; margin-top:3rem; }
+</style>
+</head>
+<body>
+<header>
+ <div class="container">
+  <a href="/" class="logo">Trip<span>Tip</span>List</a>
+  <nav>
+   <a href="/portugal/" class="">Portugal</a>
+   <a href="/italy/" class="">Italy</a>
+   <a href="/japan/" class="">Japan</a>
+  </nav>
+ </div>
+</header>
+<main>
+ <div class="container">
+   
+  <div class="article-content">
+   <div class="hero"><h1>Your Next Trip, Planned</h1><p>Honest travel guides written from real experience. No fluff, no AI filler — just the tips you actually need.</p></div>
+<h2>Latest Guides</h2>
+<div class="card-grid"><div class="card"><a href="/portugal/best-time-to-visit-portugal/"><img src="/portugal/best-time-to-visit-portugal/image.png" alt="The Best Time to Visit Portugal: A Comprehensive Travel Guide - Portugal travel guide" loading="lazy"></a><div class="card-body"><span class="tag">portugal</span><h3><a href="/portugal/best-time-to-visit-portugal/">The Best Time to Visit Portugal: A Comprehensive Travel Guide</a></h3></div></div>
+<div class="card"><a href="/japan/best-time-to-visit-japan/"><img src="/japan/best-time-to-visit-japan/image.png" alt="Best Time To Visit Japan - Japan travel guide" loading="lazy"></a><div class="card-body"><span class="tag">japan</span><h3><a href="/japan/best-time-to-visit-japan/">Best Time To Visit Japan</a></h3></div></div>
+<div class="card"><a href="/portugal/best-beach-towns-in-portugal/"><img src="/portugal/best-beach-towns-in-portugal/image.png" alt="Best Beach Towns In Portugal - Portugal travel guide" loading="lazy"></a><div class="card-body"><span class="tag">portugal</span><h3><a href="/portugal/best-beach-towns-in-portugal/">Best Beach Towns In Portugal</a></h3></div></div>
+<div class="card"><a href="/portugal/how-to-get-around-portugal/"><img src="/portugal/how-to-get-around-portugal/image.png" alt="How to Get Around Portugal: A Comprehensive Travel Guide - Portugal travel guide" loading="lazy"></a><div class="card-body"><span class="tag">portugal</span><h3><a href="/portugal/how-to-get-around-portugal/">How to Get Around Portugal: A Comprehensive Travel Guide</a></h3></div></div>
+<div class="card"><a href="/portugal/best-cities-to-visit-in-portugal/"><img src="/portugal/best-cities-to-visit-in-portugal/image.png" alt="Best Cities To Visit In Portugal - Portugal travel guide" loading="lazy"></a><div class="card-body"><span class="tag">portugal</span><h3><a href="/portugal/best-cities-to-visit-in-portugal/">Best Cities To Visit In Portugal</a></h3></div></div>
+<div class="card"><a href="/portugal/what-to-do-in-lisbon-for-3-days/"><img src="/portugal/what-to-do-in-lisbon-for-3-days/image.png" alt="What To Do In Lisbon For 3 Days - Portugal travel guide" loading="lazy"></a><div class="card-body"><span class="tag">portugal</span><h3><a href="/portugal/what-to-do-in-lisbon-for-3-days/">What To Do In Lisbon For 3 Days</a></h3></div></div>
+<div class="card"><a href="/italy/best-time-to-visit-italy/"><img src="/italy/best-time-to-visit-italy/image.png" alt="The Best Time to Visit Italy: A Comprehensive Travel Guide - Italy travel guide" loading="lazy"></a><div class="card-body"><span class="tag">italy</span><h3><a href="/italy/best-time-to-visit-italy/">The Best Time to Visit Italy: A Comprehensive Travel Guide</a></h3></div></div>
+<div class="card"><a href="/japan/7-day-japan-itinerary/"><img src="/japan/7-day-japan-itinerary/image.png" alt="7 Day Japan Itinerary - Japan travel guide" loading="lazy"></a><div class="card-body"><span class="tag">japan</span><h3><a href="/japan/7-day-japan-itinerary/">7 Day Japan Itinerary</a></h3></div></div>
+<div class="card"><a href="/japan/10-day-itinerary-for-japan/"><img src="/japan/10-day-itinerary-for-japan/image.png" alt="10 Day Itinerary For Japan - Japan travel guide" loading="lazy"></a><div class="card-body"><span class="tag">japan</span><h3><a href="/japan/10-day-itinerary-for-japan/">10 Day Itinerary For Japan</a></h3></div></div>
+<div class="card"><a href="/japan/best-day-trips-from-tokyo/"><img src="/japan/best-day-trips-from-tokyo/image.png" alt="Best Day Trips From Tokyo - Japan travel guide" loading="lazy"></a><div class="card-body"><span class="tag">japan</span><h3><a href="/japan/best-day-trips-from-tokyo/">Best Day Trips From Tokyo</a></h3></div></div>
+<div class="card"><a href="/italy/best-cities-to-visit-in-italy/"><img src="/italy/best-cities-to-visit-in-italy/image.png" alt="Best Cities To Visit In Italy - Italy travel guide" loading="lazy"></a><div class="card-body"><span class="tag">italy</span><h3><a href="/italy/best-cities-to-visit-in-italy/">Best Cities To Visit In Italy</a></h3></div></div>
+</div>
+  </div>
+ </div>
+</main>
+<footer>
+ <div class="container">&copy; 2026 TripTipList.com — Your travel planning companion</div>
+</footer>
+</body>
+</html>
