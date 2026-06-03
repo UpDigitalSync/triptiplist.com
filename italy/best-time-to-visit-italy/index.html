@@ -98,6 +98,18 @@ main { padding:2rem 0; }
 .related-card img { width:100%; height:120px; object-fit:cover; }
 .related-card span { display:block; padding:0.8rem 1rem; font-size:0.95rem; font-weight:500; }
 footer { border-top:1px solid #eee; padding:1.5rem 0; text-align:center; color:#999; font-size:0.8rem; margin-top:3rem; }
+
+/* Affiliate blocks (GYG, Booking, Airalo, insurance) */
+.affiliate-block { margin: 2.5rem 0; padding: 1.4rem 1.6rem; background: #fff; border: 1px solid #e8e8e8; border-left: 4px solid #c0504d; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+.affiliate-block__head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.55rem; flex-wrap: wrap; gap: 0.5rem; }
+.affiliate-tag { display: inline-block; background: #f4cccc; color: #c0504d; font-size: 0.72rem; padding: 0.22rem 0.7rem; border-radius: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+.affiliate-disclosure { font-size: 0.72rem; color: #999; font-style: italic; }
+.affiliate-block__title { font-size: 1.18rem !important; color: #1a1a1a !important; margin: 0 0 0.5rem 0 !important; line-height: 1.35 !important; }
+.affiliate-block__copy { font-size: 0.95rem; color: #555; margin-bottom: 1rem; line-height: 1.55; }
+.affiliate-block__cta { display: inline-block; background: #c0504d; color: #fff !important; padding: 0.65rem 1.4rem; border-radius: 6px; font-weight: 600; text-decoration: none !important; transition: background 0.2s ease; font-size: 0.95rem; }
+.affiliate-block__cta:hover { background: #a03f3c; text-decoration: none !important; }
+.affiliate-block__cta:after { content: " \2192"; }
+
 </style>
 </head>
 <body>
@@ -205,6 +217,15 @@ Look for local festivals in spring and fall; they can offer a unique glimpse int
 </tr>
 </tbody>
 </table>
+<aside class="affiliate-block">
+  <div class="affiliate-block__head">
+    <span class="affiliate-tag">Plan ahead</span>
+    <span class="affiliate-disclosure">Affiliate link &mdash; we may earn a commission at no extra cost to you.</span>
+  </div>
+  <h3 class="affiliate-block__title">Plan experiences for your Italy trip</h3>
+  <p class="affiliate-block__copy">Compare top-rated tours, day trips, and skip-the-line tickets across Italy. Free cancellation on most experiences.</p>
+  <a class="affiliate-block__cta" href="https://www.getyourguide.com/s/?q=Italy&partner_id=ZLEPOU5&utm_source=triptiplist&utm_medium=affiliate&utm_campaign=italy-best-time-to-visit-italy&utm_content=gyg" target="_blank" rel="sponsored noopener">Explore Italy on GetYourGuide</a>
+</aside>
 <section class="related-articles">
 <h2>More Italy Guides</h2>
 <div class="related-grid"><div class="related-card"><a href="/italy/best-cities-to-visit-in-italy/"><img src="/italy/best-cities-to-visit-in-italy/image.png" alt="Best Cities To Visit In Italy" loading="lazy"><span>Best Cities To Visit In Italy</span></a></div>
