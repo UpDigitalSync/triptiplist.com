@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /_drafts/
 
 Sitemap: https://triptiplist.com/sitemap.xml
