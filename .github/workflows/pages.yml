@@ -10,12 +10,13 @@ permissions:
   pages: write
   id-token: write
 
-# Coalesce bursts: a new deploy supersedes one still in flight, so rapid
-# promote commits never pile up into colliding builds. The final deploy
-# always reflects the full latest main, so nothing is lost.
+# Let each deploy run to completion (don't cancel in-flight): under a burst
+# this makes pages go live progressively and reliably, instead of every
+# deploy but the last getting cancelled and pages only appearing minutes
+# after the final commit. Queued-beyond-one are coalesced to latest main.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   deploy:
